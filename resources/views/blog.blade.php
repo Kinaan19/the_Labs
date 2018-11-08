@@ -1,47 +1,15 @@
 @extends('adminlte::master')
 
-<!-- Page Preloder -->
-<div id="preloder">
-    <div class="loader">
-        <img src="img/logo.png" alt="">
-        <h2>Loading.....</h2>
-    </div>
-</div>
+@section('body')
 
 
-<!-- Header section -->
-<header class="header-section">
-    <div class="logo">
-        <img src="img/logo.png" alt=""><!-- Logo -->
-    </div>
-    <!-- Navigation -->
-    <div class="responsive"><i class="fa fa-bars"></i></div>
-    <nav>
-        <ul class="menu-list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li class="active"><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/elements">Elements</a></li>
-        </ul>
-    </nav>
-</header>
-<!-- Header section end -->
+<!-- Page Preloder and Header -->
+@include('partials/header')
+<!-- End Page Preloder and Header -->
 
 
 <!-- Page header -->
-<div class="page-top-section">
-    <div class="overlay"></div>
-    <div class="container text-right">
-        <div class="page-info">
-            <h2>Blog</h2>
-            <div class="page-links">
-                <a href="#">Home</a>
-                <span>Blog</span>
-            </div>
-        </div>
-    </div>
-</div>
+@include('partials/pageHeader')
 <!-- Page header end-->
 
 
@@ -70,7 +38,7 @@
                             elementum id, suscipit id nulla. Phasellus vestibulum, quam tincidunt venenatis ultrices,
                             est libero mattis ante, ac consectetur diam neque eget quam. Etiam feugiat augue et varius
                             blandit. Praesent mattis, eros a sodales commodo.</p>
-                        <a href="blog-post.html" class="read-more">Read More</a>
+                        <a href="/blog_post" class="read-more">Read More</a>
                     </div>
                 </div>
                 <!-- Post item -->
@@ -93,7 +61,7 @@
                             elementum id, suscipit id nulla. Phasellus vestibulum, quam tincidunt venenatis ultrices,
                             est libero mattis ante, ac consectetur diam neque eget quam. Etiam feugiat augue et varius
                             blandit. Praesent mattis, eros a sodales commodo.</p>
-                        <a href="blog-post.html" class="read-more">Read More</a>
+                        <a href="/blog_post" class="read-more">Read More</a>
                     </div>
                 </div>
                 <!-- Post item -->
@@ -116,7 +84,7 @@
                             elementum id, suscipit id nulla. Phasellus vestibulum, quam tincidunt venenatis ultrices,
                             est libero mattis ante, ac consectetur diam neque eget quam. Etiam feugiat augue et varius
                             blandit. Praesent mattis, eros a sodales commodo.</p>
-                        <a href="blog-post.html" class="read-more">Read More</a>
+                        <a href="/blog_post" class="read-more">Read More</a>
                     </div>
                 </div>
                 <!-- Pagination -->
@@ -127,69 +95,7 @@
                 </div>
             </div>
             <!-- Sidebar area -->
-            <div class="col-md-4 col-sm-5 sidebar">
-                <!-- Single widget -->
-                <div class="widget-item">
-                    <form action="#" class="search-form">
-                        <input type="text" placeholder="Search">
-                        <button class="search-btn"><i class="flaticon-026-search"></i></button>
-                    </form>
-                </div>
-                <!-- Single widget -->
-                <div class="widget-item">
-                    <h2 class="widget-title">Categories</h2>
-                    <ul>
-                        <li><a href="#">Vestibulum maximus</a></li>
-                        <li><a href="#">Nisi eu lobortis pharetra</a></li>
-                        <li><a href="#">Orci quam accumsan </a></li>
-                        <li><a href="#">Auguen pharetra massa</a></li>
-                        <li><a href="#">Tellus ut nulla</a></li>
-                        <li><a href="#">Etiam egestas viverra </a></li>
-                    </ul>
-                </div>
-                <!-- Single widget -->
-                <div class="widget-item">
-                    <h2 class="widget-title">Instagram</h2>
-                    <ul class="instagram">
-                        <li><img src="img/instagram/1.jpg" alt=""></li>
-                        <li><img src="img/instagram/2.jpg" alt=""></li>
-                        <li><img src="img/instagram/3.jpg" alt=""></li>
-                        <li><img src="img/instagram/4.jpg" alt=""></li>
-                        <li><img src="img/instagram/5.jpg" alt=""></li>
-                        <li><img src="img/instagram/6.jpg" alt=""></li>
-                    </ul>
-                </div>
-                <!-- Single widget -->
-                <div class="widget-item">
-                    <h2 class="widget-title">Tags</h2>
-                    <ul class="tag">
-                        <li><a href="">branding</a></li>
-                        <li><a href="">identity</a></li>
-                        <li><a href="">video</a></li>
-                        <li><a href="">design</a></li>
-                        <li><a href="">inspiration</a></li>
-                        <li><a href="">web design</a></li>
-                        <li><a href="">photography</a></li>
-                    </ul>
-                </div>
-                <!-- Single widget -->
-                <div class="widget-item">
-                    <h2 class="widget-title">Quote</h2>
-                    <div class="quote">
-                        <span class="quotation">‘​‌‘​‌</span>
-                        <p>Vivamus in urna eu enim porttitor consequat. Proin vitae pulvinar libero. Proin ut hendrerit
-                            metus. Aliquam erat volutpat. Donec fermen tum convallis ante eget tristique. Sed lacinia
-                            turpis at ultricies vestibulum.</p>
-                    </div>
-                </div>
-                <!-- Single widget -->
-                <div class="widget-item">
-                    <h2 class="widget-title">Add</h2>
-                    <div class="add">
-                        <a href=""><img src="img/add.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
+            @include('partials/blogSideBar')
         </div>
     </div>
 </div>
@@ -197,27 +103,13 @@
 
 
 <!-- newsletter section -->
-<div class="newsletter-section spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <h2>Newsletter</h2>
-            </div>
-            <div class="col-md-9">
-                <!-- newsletter form -->
-                <form class="nl-form">
-                    <input type="text" placeholder="Your e-mail here">
-                    <button class="site-btn btn-2">Newsletter</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+@include('partials/newsLetter')
 <!-- newsletter section end-->
 
 
 <!-- Footer section -->
-<footer class="footer-section">
-    <h2>2017 All rights reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></h2>
-</footer>
+@include('partials/footer')
 <!-- Footer section end -->
+
+
+@stop

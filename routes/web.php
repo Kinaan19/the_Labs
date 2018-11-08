@@ -20,6 +20,9 @@ Route::get('/services', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
+Route::get('/blog_post', function () {
+    return view('blog_post');
+});
 Route::get('/contact', function () {
     return view('contact');
 });

@@ -1,47 +1,15 @@
 @extends('adminlte::master')
 
-<!-- Page Preloder -->
-<div id="preloder">
-    <div class="loader">
-        <img src="img/logo.png" alt="">
-        <h2>Loading.....</h2>
-    </div>
-</div>
+@section('body')
 
 
-<!-- Header section -->
-<header class="header-section">
-    <div class="logo">
-        <img src="img/logo.png" alt=""><!-- Logo -->
-    </div>
-    <!-- Navigation -->
-    <div class="responsive"><i class="fa fa-bars"></i></div>
-    <nav>
-        <ul class="menu-list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li class="active"><a href="/elements">Elements</a></li>
-        </ul>
-    </nav>
-</header>
-<!-- Header section end -->
+<!-- Page Preloder and Header -->
+@include('partials/header')
+<!-- End Page Preloder and Header -->
 
 
 <!-- Page header -->
-<div class="page-top-section">
-    <div class="overlay"></div>
-    <div class="container text-right">
-        <div class="page-info">
-            <h2>Blog</h2>
-            <div class="page-links">
-                <a href="#">Home</a>
-                <span>Blog</span>
-            </div>
-        </div>
-    </div>
-</div>
+@include('partials/pageHeader')
 <!-- Page header end-->
 
 
@@ -295,7 +263,8 @@
 
 
 <!-- Footer section -->
-<footer class="footer-section">
-    <h2>2017 All rights reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></h2>
-</footer>
+@include('partials/footer')
 <!-- Footer section end -->
+
+
+@stop
