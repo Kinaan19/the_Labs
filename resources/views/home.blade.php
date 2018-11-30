@@ -3,9 +3,9 @@
 @section('body')
 
 
-<!-- Page Preloder and Header -->
+<!-- Page Preloader and Header -->
 @include('partials/header')
-<!-- End Page Preloder and Header -->
+<!-- End Page Preloader and Header -->
 
 
 <!-- Intro Section -->

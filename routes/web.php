@@ -26,7 +26,7 @@ Route::get('/blog_post', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/elements', function () {
+Route::get('/see_elements', function () {
     return view('elements');
 });
 
